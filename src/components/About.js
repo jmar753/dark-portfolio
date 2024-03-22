@@ -6,16 +6,29 @@ export default function About(){
         {value:"JavaScript"},
         {value:"Python"},
         {value:"React"},
-        {value:"NextJS"},
-        {value:"NodeJS"},
         {value:"HTML"},
         {value:"CSS"},
+        {value:"Tailwind"},
+        {value:"Bootstrap"},
+        {value:"NextJS"},
+        {value:"NodeJS"},
         {value:"MongoDB"},
         {value:"Jira"},
         {value:"GitHub"},
         {value:"Vercel"},
         {value:"Netlify"},
 
+    ]
+
+    const funTag = [
+        {value:"Java"},
+        {value:"Spring"},
+        {value:"VueJS"},
+        {value:"C/C++"},
+        {value:"Unity"},
+        {value:"Figma"},
+        {value:"TypeScript"},
+        {value:"PostgreSQL"},
     ]
     
     return(
@@ -37,19 +50,26 @@ export default function About(){
                                 <p>My Links</p>
                             </div> 
                         </div>
-                        <div className="w-[calc(54rem)]">
-                            <div className="w-full">
-                                <h1 className="font-bold text-3xl">Use at work</h1>
-                                <div className="flex items-start flex-wrap w-full">
+                        <div className="w-[calc(54rem)] grid grid-rows-2">
+                            <div className="">
+                                <h1 className="font-bold text-3xl pb-4">Use at work</h1>
+                                <div className="flex items-start flex-wrap gap-2 w-full">
                                     {workTag.map((item, index) => (
-                                        <div className="bg-orange-400 rounded-lg mx-1" key={index}>
+                                        <div className="bg-orange-400 rounded-2xl px-2 py-0.5" key={index}>
                                             {item.value}
                                         </div>
                                     ))}
                                 </div>
                             </div>
-                            <div>
-                                <h1>Use for fun </h1>
+                            <div className="">
+                                <h1 className="font-bold text-3xl pb-4">Use for fun</h1>
+                                <div className="flex items-start flex-wrap gap-2 w-full">
+                                    {funTag.map((item, index) => (
+                                        <div className="bg-orange-400 rounded-2xl px-2 py-0.5" key={index}>
+                                            {item.value}
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>
