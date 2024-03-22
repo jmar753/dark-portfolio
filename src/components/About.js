@@ -1,5 +1,3 @@
-import { useState, useRef, useEffect} from "react";
-
 export default function About(){
 
     const workTag = [
@@ -42,10 +40,10 @@ export default function About(){
                     </div>
                     <div className="flex space-x-6">
                         <div className="space-y-4">
-                            <p className="text-xl ">Thanks for clicking on my page! I’m a recent grad from Seneca Polytechnic who used to work in the automotive industry in Mississauga. I specialize Front-End, primarily JavaScript, but I can use whatever tools we need for the job.</p>
+                            <p className="text-xl ">Hey, I’m JR and I'm a recent grad from Seneca Polytechnic who used to work in the automotive industry in Mississauga. I specialize Front-End, primarily JavaScript, but I can use whatever tools we need for the job.</p>
                             <p className="text-xl ">Right now, I’m learning all the things I wanted to learn before, like  Python, Unity, Java (I’m gonna be posting all my silly lil’ projects :D) and even things other things like tying fishing lines, making D&D characters and Indonesian.</p>
                             <p className="text-xl ">Outside of work, I love powerlifting because it’s funny to lift heavy at a whopping 5 foot 4. Other than that, you can find me in rivers untangling lines and boardgame cafes playing some Catan and YuGiOh.</p>
-                            <p className="text-xl ">I'm actively looking for new positions where I can learn as much as I can, especially back-end since my goal is to get nice at full stack. If you think you've got an opening for an intern like me, let's connect!</p>
+                            <p className="text-xl ">I'm actively looking for new positions where I can learn as much as I can, especially Back-End since my goal is to be great at Full-Stack. If you think you've got an opening for an intern like me, let's connect!</p>
                             <div className="flex">
                                 <p>My Links</p>
                             </div> 
