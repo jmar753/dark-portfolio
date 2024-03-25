@@ -12,7 +12,7 @@ function App() {
       <Header/>
       <div class="flex flex-row h-screen">
         <SideNav/>
-        <main class="bg-blue-500 w-[calc(100vw-3.5rem)] overflow-y-auto">
+        <main class="bg-neutral-900 w-[calc(100vw-3.5rem)] overflow-y-auto">
           <Introduction/>
           <About/>
           <Projects/>
