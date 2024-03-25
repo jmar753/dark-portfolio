@@ -5,7 +5,7 @@ import { IconContext } from "react-icons";
 export default function Header(){
     return(
         <div className="bg-neutral-900 backdrop-blur bg-opacity-50 text-white w-[calc(100vw-3.5rem)] flex justify-between items-center font-semibold h-16 fixed top-0 left-14 z-40 text-xl px-10">
-            <IconContext.Provider value={{ className: 'text-zinc-500 text-xl size-6 opacity-100' }}>
+            <IconContext.Provider value={{ className: 'text-zinc-500 text-xl size-6 opacity-100  hover:text-slate-200 hover:cursor-pointer transition duration-100' }}>
                 <div className="flex gap-x-4">
                     <FaGithub/>
                     <FaLinkedin/>
