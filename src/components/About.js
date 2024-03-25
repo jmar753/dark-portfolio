@@ -1,5 +1,8 @@
-export default function About(){
+import { FaLaptopCode } from "react-icons/fa";
+import { IconContext } from "react-icons";
+import { BiSolidInvader } from "react-icons/bi";
 
+export default function About(){
     const workTag = [
         {value:"JavaScript"},
         {value:"Python"},
@@ -44,26 +47,34 @@ export default function About(){
                             <p className="text-xl ">As a recent grad, I’m learning all the things I've wanted to learn before, like  Python, Unity, Java (I’m gonna be posting all my silly lil’ projects :D) and even things other things like tying fishing lines, making D&D characters and Indonesian.</p>
                             <p className="text-xl ">Outside of work, I love powerlifting because it’s funny to lift heavy at a whopping 5 foot 4. Other than that, you can find me in rivers untangling lines and boardgame cafes playing some Catan and YuGiOh.</p>
                             <p className="text-xl ">I'm actively looking for new positions where I can learn as much as I can, especially Back-End since my goal is to a well rounded Full-Stack developer. If you think you've got an opening for an intern like me, let's connect!</p>
-                            <div className="flex">
-                                <p>My Links</p>
-                            </div> 
+
                         </div>
                         <div className="w-[calc(54rem)] grid grid-rows-2">
                             <div className="">
-                                <h1 className="font-bold text-3xl pb-4">Use at work</h1>
+                                <div className="flex items-center gap-x-2 pb-4">
+                                    <IconContext.Provider value={{ className: 'text-orange-500 size-7 opacity-100' }}>
+                                        <FaLaptopCode />
+                                    </IconContext.Provider>
+                                    <h1 className="font-bold text-3xl">Use at work</h1>
+                                </div>
                                 <div className="flex items-start flex-wrap gap-2 w-full">
                                     {workTag.map((item, index) => (
-                                        <div className="bg-orange-400 rounded-2xl px-2 py-0.5" key={index}>
+                                        <div className="bg-orange-500 rounded-2xl px-2 py-0.5" key={index}>
                                             {item.value}
                                         </div>
                                     ))}
                                 </div>
                             </div>
                             <div className="">
-                                <h1 className="font-bold text-3xl pb-4">Use for fun</h1>
+                                <div className="flex items-center gap-x-2 pb-4">
+                                    <IconContext.Provider value={{ className: 'text-orange-500 size-7 opacity-100' }}>
+                                        <BiSolidInvader />
+                                    </IconContext.Provider>
+                                    <h1 className="font-bold text-3xl">Use for fun</h1>
+                                </div>
                                 <div className="flex items-start flex-wrap gap-2 w-full">
                                     {funTag.map((item, index) => (
-                                        <div className="bg-orange-400 rounded-2xl px-2 py-0.5" key={index}>
+                                        <div className="bg-orange-500 rounded-2xl px-2 py-0.5" key={index}>
                                             {item.value}
                                         </div>
                                     ))}
