@@ -38,7 +38,7 @@ export default function About(){
                 <div className="px-20">
                 <div className="min-h-screen w-full flex flex-col space-y-4">
                     <div className="relative flex py-5 items-center">
-                        <span className="flex-shrink font-bold text-6xl pr-10">About.</span>
+                        <h1 className="flex-shrink font-bold text-6xl pr-10">About<span className="text-orange-500">.</span></h1>
                         <div class="flex-grow border-t border-gray-400"></div>
                     </div>
                     <div className="flex space-x-6">
@@ -59,7 +59,7 @@ export default function About(){
                                 </div>
                                 <div className="flex items-start flex-wrap gap-2 w-full">
                                     {workTag.map((item, index) => (
-                                        <div className="bg-orange-500 rounded-2xl px-2 py-0.5" key={index}>
+                                        <div className="bg-neutral-800 rounded-2xl px-2 py-0.5" key={index}>
                                             {item.value}
                                         </div>
                                     ))}
@@ -74,7 +74,7 @@ export default function About(){
                                 </div>
                                 <div className="flex items-start flex-wrap gap-2 w-full">
                                     {funTag.map((item, index) => (
-                                        <div className="bg-orange-500 rounded-2xl px-2 py-0.5" key={index}>
+                                        <div className="bg-neutral-800 rounded-2xl px-2 py-0.5" key={index}>
                                             {item.value}
                                         </div>
                                     ))}

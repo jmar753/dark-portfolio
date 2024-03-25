@@ -15,7 +15,7 @@ export default function Timeline(){
                 <div className="px-20">
                 <div className="min-h-screen w-full flex flex-col space-y-4">
                     <div className="relative flex py-5 items-center">
-                        <span className="flex-shrink font-bold text-6xl pr-10">Timeline.</span>
+                        <h1 className="flex-shrink font-bold text-6xl pr-10">Timeline<span className="text-orange-500">.</span></h1>
                         <div class="flex-grow border-t border-gray-400"></div>
                     </div>
                     <div className="space-y-6">
@@ -25,7 +25,7 @@ export default function Timeline(){
                             <p className="text-xl ">Right now, I'm learning all the things I wanted to learn before, like  Python, Unity, Java (I'm gonna be posting all my silly lil' projects :D) and even things other things like tying fishing lines, making D&D characters and Indonesian.</p>
                             <div className="flex items-start flex-wrap gap-2 w-full">
                                 {funTag.map((item, index) => (
-                                    <div className="bg-orange-400 rounded-2xl px-2 py-0.5" key={index}>
+                                    <div className="bg-neutral-800 rounded-2xl px-2 py-0.5" key={index}>
                                         {item.value}
                                     </div>
                                 ))}
@@ -38,7 +38,7 @@ export default function Timeline(){
                             <p className="text-xl ">Right now, I'm learning all the things I wanted to learn before, like  Python, Unity, Java (I'm gonna be posting all my silly lil' projects :D) and even things other things like tying fishing lines, making D&D characters and Indonesian.</p>
                             <div className="flex items-start flex-wrap gap-2 w-full">
                                 {funTag.map((item, index) => (
-                                    <div className="bg-orange-400 rounded-2xl px-2 py-0.5" key={index}>
+                                    <div className="bg-neutral-800 rounded-2xl px-2 py-0.5" key={index}>
                                         {item.value}
                                     </div>
                                 ))}
