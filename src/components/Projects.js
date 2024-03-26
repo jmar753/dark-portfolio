@@ -10,9 +10,9 @@ export default function Projects(){
     ]
     return(
         <div className="min-h-screen w-full flex items-center justify-center text-white">
-            <div className="max-w-6xl min-h-screen">
+            <div className="max-w-6xl">
                 <div className="px-20">
-                    <div className="min-h-screen flex flex-col space-y-4">
+                    <div className="flex flex-col space-y-4">
                         <div className="relative flex py-5 items-center">
                             <h1 className="flex-shrink font-bold text-6xl pr-10">Projects<span className="text-orange-500">.</span></h1>
                             <div class="flex-grow border-t border-gray-400"></div>
