@@ -1,9 +1,9 @@
-import {Children, useEffect, useRef} from "react";
+import {useEffect, useRef} from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 export default function Reveal(props){
-    const ref = useRef(null)
-    const isInView = useInView(ref, {once: true})
+    const ref = useRef(null);
+    const isInView = useInView(ref, {once: false})
 
     const mainControls = useAnimation()
 
@@ -14,7 +14,7 @@ export default function Reveal(props){
     }, [isInView])
 
     return (
-        <div>
+        <div ref={ref}>
             <motion.div
                 variants={{
                     hidden: {opacity: 0, y:75},

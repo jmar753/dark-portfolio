@@ -15,17 +15,17 @@ export default function Projects(){
                     <div className="flex flex-col space-y-4">
                         <div className="relative flex py-5 items-center">
                             <h1 className="flex-shrink font-bold text-6xl pr-10">Projects<span className="text-orange-500">.</span></h1>
-                            <div class="flex-grow border-t border-gray-400"></div>
+                            <div className="flex-grow border-t border-gray-400"></div>
                         </div>
-                        <div class="mt-12 grid grid-cols-2 gap-4">
+                        <div className="mt-12 grid grid-cols-2 gap-4">
                         {websiteArray.map((item, index) => (
-                            <a href={item.link}>
-                                <div class="relative group overflow-hidden p-4 rounded-xl hover:bg-zinc-950 hover:cursor-pointer">
-                                    <div class="relative gap-y-2">
+                            <a href={item.link}  key={index}>
+                                <div className="relative group overflow-hidden p-4 rounded-xl hover:bg-zinc-950 hover:cursor-pointer">
+                                    <div className="relative gap-y-2">
                                         <img className="object-cover col-span-2 rounded-lg" src={item.imageLoc} alt=""/>
                                         <div className="relative flex py-3 items-center">
                                             <span className="flex-shrink font-bold text-2xl pr-2">{item.name}</span>
-                                            <div class="flex-grow border-t border-gray-400"></div>
+                                            <div className="flex-grow border-t border-gray-400"></div>
                                             <a href={item.project}>
                                                 <IconContext.Provider value={{ className: 'text-zinc-500 text-xl size-6 opacity-100 hover:text-slate-200 transition duration-100' }}>
                                                     <div className="pl-2 flex gap-x-4">

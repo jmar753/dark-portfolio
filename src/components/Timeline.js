@@ -16,7 +16,7 @@ export default function Timeline(){
                 <div className=" w-full flex flex-col space-y-4">
                     <div className="relative flex py-5 items-center">
                         <h1 className="flex-shrink font-bold text-6xl pr-10">Timeline<span className="text-orange-500">.</span></h1>
-                        <div class="flex-grow border-t border-gray-400"></div>
+                        <div className="flex-grow border-t border-gray-400"></div>
                     </div>
                     <div className="space-y-6">
                         <div className="space-y-4">
