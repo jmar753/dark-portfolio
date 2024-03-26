@@ -9,7 +9,7 @@ export default function Projects(){
         {name:"Portfolio Page", link:"https://jr-mohan-portfolio.vercel.app/", imageLoc:portfolio, tags:["NextJS", "Tailwind"], description:"A template I’ve been using often to create projects for friends, and helping with their job search! It’s dynamic and built specifically for mobile.", project:"https://github.com/jmar753/ProfessionalWebsite"},
     ]
     return(
-        <div className="min-h-screen w-full flex items-center justify-center text-white">
+        <div className="min-h-[calc(100vh-64px)] w-full flex items-center justify-center text-white">
             <div className="max-w-6xl">
                 <div className="px-20">
                     <div className="flex flex-col space-y-4">

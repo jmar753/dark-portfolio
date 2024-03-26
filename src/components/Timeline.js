@@ -10,7 +10,7 @@ export default function Timeline(){
         {value:"PostgreSQL"},
     ]
     return(
-        <div className=" w-full flex items-center justify-center text-white">
+        <div className="min-h-[calc(100vh-64px)] w-full flex items-center justify-center text-white">
             <div className="max-w-6xl ">
                 <div className="px-20">
                 <div className=" w-full flex flex-col space-y-4">
