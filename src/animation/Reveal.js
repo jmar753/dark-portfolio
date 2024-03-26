@@ -2,6 +2,17 @@ import {Children, useEffect, useRef} from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 export default function Reveal(props){
+    const ref = useRef(null)
+    const isInView = useInView(ref, {once: true})
+
+    const mainControls = useAnimation()
+
+    useEffect(() => {
+        if(isInView){
+            mainControls.start("visible")
+        }
+    }, [isInView])
+
     return (
         <div>
             <motion.div
@@ -11,6 +22,7 @@ export default function Reveal(props){
                 }}
                 initial="hidden"
                 animate="visible"
+                transition={{ duration: 0.5, delay: 0.25}}
             >
                 {props.children}
             </motion.div>

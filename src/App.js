@@ -19,13 +19,11 @@ function App() {
       <div class="flex flex-row h-screen">
         <SideNav/>
         <main class="bg-neutral-900 w-[calc(100vw-3.5rem)] overflow-y-auto">
-          <Reveal>
-            <Introduction/>
-          </Reveal>
-          <About/>
-          <Projects/>
-          <Timeline/>
-          <Contact/>
+          <Reveal><Introduction/></Reveal>
+          <Reveal><About/></Reveal>
+          <Reveal><Projects/></Reveal>
+          <Reveal><Timeline/></Reveal>
+          <Reveal><Contact/></Reveal>
         </main>
       </div>
     </div>
