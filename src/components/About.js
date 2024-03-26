@@ -1,6 +1,7 @@
 import { FaLaptopCode } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { BiSolidInvader } from "react-icons/bi";
+import Reveal from "../animation/Reveal";
 
 export default function About(){
     const workTag = [
@@ -37,17 +38,26 @@ export default function About(){
             <div className="max-w-6xl">
                 <div className="px-20">
                 <div className="w-full flex flex-col space-y-4">
-                    <div className="relative flex py-5 items-center">
-                        <h1 className="flex-shrink font-bold text-6xl pr-10">About<span className="text-orange-500">.</span></h1>
-                        <div className="flex-grow border-t border-gray-400"></div>
-                    </div>
+                        <div className="relative flex py-5 items-center">
+                            <Reveal>
+                                <h1 className="flex-shrink font-bold text-6xl pr-10">About<span className="text-orange-500">.</span></h1>
+                            </Reveal>
+                            <div className="flex-grow border-t border-gray-400"></div>
+                        </div>
                     <div className="flex space-x-6">
                         <div className="space-y-4">
-                            <p className="text-xl ">Hey, I’m JR and I'm an ex-automotive worker and recent grad from Seneca Polytechnic. I specialize Front-End, primarily JavaScript, but I'm really looking to expand into Back-End to be super well rounded!</p>
-                            <p className="text-xl ">As a recent grad, I’m learning all the things I've wanted to learn before, like  Python, Unity, Java (I’m gonna be posting all my silly lil’ projects :D) and even things other things like tying fishing lines, making D&D characters and Indonesian.</p>
-                            <p className="text-xl ">Outside of work, I love powerlifting because it’s funny to lift heavy at a whopping 5 foot 4. Other than that, you can find me in rivers untangling lines and boardgame cafes playing some Catan and YuGiOh.</p>
-                            <p className="text-xl ">I'm actively looking for new positions where I can learn as much as I can, especially Back-End since my goal is to a well rounded Full-Stack developer. If you think you've got an opening for an intern like me, let's connect!</p>
-
+                            <Reveal>
+                                <p className="text-xl ">Hey, I’m JR and I'm an ex-automotive worker and recent grad from Seneca Polytechnic. I specialize Front-End, primarily JavaScript, but I'm really looking to expand into Back-End to be super well rounded!</p>
+                            </Reveal>
+                            <Reveal>
+                                <p className="text-xl ">As a recent grad, I’m learning all the things I've wanted to learn before, like  Python, Unity, Java (I’m gonna be posting all my silly lil’ projects :D) and even things other things like tying fishing lines, making D&D characters and Indonesian.</p>
+                            </Reveal>
+                            <Reveal>
+                                <p className="text-xl ">Outside of work, I love powerlifting because it’s funny to lift heavy at a whopping 5 foot 4. Other than that, you can find me in rivers untangling lines and boardgame cafes playing some Catan and YuGiOh.</p>
+                            </Reveal>
+                            <Reveal>
+                                <p className="text-xl ">I'm actively looking for new positions where I can learn as much as I can, especially Back-End since my goal is to a well rounded Full-Stack developer. If you think you've got an opening for an intern like me, let's connect!</p>
+                            </Reveal>
                         </div>
                         <div className="w-[calc(54rem)] grid grid-rows-2">
                             <div className="">

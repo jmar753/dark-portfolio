@@ -5,7 +5,6 @@ import Introduction from './components/Introduction';
 import Projects from './components/Projects';
 import SideNav from './components/SideNav';
 import Timeline from './components/Timeline';
-import Reveal from './animation/Reveal';
 
 
 function App() {
@@ -15,11 +14,11 @@ function App() {
       <div className="flex flex-row h-screen">
         <SideNav/>
         <main className="bg-neutral-900 w-[calc(100vw-3.5rem)] overflow-y-auto">
-          <Reveal><Introduction/></Reveal>
-          <Reveal><About/></Reveal>
-          <Reveal><Projects/></Reveal>
-          <Reveal><Timeline/></Reveal>
-          <Reveal><Contact/></Reveal>
+          <Introduction/>
+          <About/>
+          <Projects/>
+          <Timeline/>
+          <Contact/>
         </main>
       </div>
     </div>
