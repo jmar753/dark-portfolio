@@ -9,7 +9,7 @@ import Timeline from './components/Timeline';
 
 function App() {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen bg-neutral-900">
       <Header/>
       <div className="flex flex-row h-screen">
         <SideNav/>

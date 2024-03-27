@@ -2,6 +2,8 @@ import { FaLaptopCode } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { BiSolidInvader } from "react-icons/bi";
 import Reveal from "../animation/Reveal";
+import SideReveal from "../animation/SideReveal";
+import HeadingsReveal from "../animation/HeadingsReveal";
 
 export default function About(){
     const workTag = [
@@ -38,12 +40,10 @@ export default function About(){
             <div className="max-w-6xl">
                 <div className="px-20">
                 <div className="w-full flex flex-col space-y-4">
-                        <div className="relative flex py-5 items-center">
-                            <Reveal>
-                                <h1 className="flex-shrink font-bold text-6xl pr-10">About<span className="text-orange-500">.</span></h1>
-                            </Reveal>
-                            <div className="flex-grow border-t border-gray-400"></div>
-                        </div>
+                    <div className="relative flex py-5 items-center">
+                        <h1 className="flex-shrink font-bold text-6xl pr-10">About<span className="text-orange-500">.</span></h1>
+                        <div className="flex-grow border-t border-gray-400"></div>
+                    </div>
                     <div className="flex space-x-6">
                         <div className="space-y-4">
                             <Reveal>
@@ -60,7 +60,7 @@ export default function About(){
                             </Reveal>
                         </div>
                         <div className="w-[calc(54rem)] grid grid-rows-2">
-                            <div className="">
+                            <HeadingsReveal className="">
                                 <div className="flex items-center gap-x-2 pb-4">
                                     <IconContext.Provider value={{ className: 'text-orange-500 size-7 opacity-100' }}>
                                         <FaLaptopCode />
@@ -74,8 +74,8 @@ export default function About(){
                                         </div>
                                     ))}
                                 </div>
-                            </div>
-                            <div className="">
+                            </HeadingsReveal>
+                            <HeadingsReveal className="">
                                 <div className="flex items-center gap-x-2 pb-4">
                                     <IconContext.Provider value={{ className: 'text-orange-500 size-7 opacity-100' }}>
                                         <BiSolidInvader />
@@ -89,7 +89,7 @@ export default function About(){
                                         </div>
                                     ))}
                                 </div>
-                            </div>
+                            </HeadingsReveal>
                         </div>
                     </div>
                 </div>

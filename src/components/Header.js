@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { IconContext } from "react-icons";
+import DownReveal from "../animation/DownReveal";
 
 export default function Header(){
     return(
