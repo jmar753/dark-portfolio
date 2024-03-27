@@ -4,6 +4,7 @@ import { BiSolidInvader } from "react-icons/bi";
 import Reveal from "../animation/Reveal";
 import SideReveal from "../animation/SideReveal";
 import HeadingsReveal from "../animation/HeadingsReveal";
+import DownReveal from "../animation/DownReveal";
 
 export default function About(){
     const workTag = [
@@ -40,10 +41,12 @@ export default function About(){
             <div className="max-w-6xl">
                 <div className="px-20">
                 <div className="w-full flex flex-col space-y-4">
-                    <div className="relative flex py-5 items-center">
-                        <h1 className="flex-shrink font-bold text-6xl pr-10">About<span className="text-orange-500">.</span></h1>
-                        <div className="flex-grow border-t border-gray-400"></div>
-                    </div>
+                    <DownReveal>
+                        <div className="relative flex py-5 items-center">
+                            <h1 className="flex-shrink font-bold text-6xl pr-10">About<span className="text-orange-500">.</span></h1>
+                            <div className="flex-grow border-t border-gray-400"></div>
+                        </div>
+                    </DownReveal>
                     <div className="flex space-x-6">
                         <div className="space-y-4">
                             <Reveal>

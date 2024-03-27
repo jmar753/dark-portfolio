@@ -22,7 +22,7 @@ export default function DownReveal({children, propDelay=0.25}){
                 }}
                 initial="hidden"
                 animate={mainControls}
-                transition={{ duration: 1.0, delay: 1}}
+                transition={{ duration: 1.0, delay: propDelay}}
             >
                 {children}
             </motion.div>

@@ -1,3 +1,6 @@
+import DownReveal from "../animation/DownReveal"
+import Reveal from "../animation/Reveal"
+
 export default function Timeline(){
     const funTag = [
         {value:"Java"},
@@ -14,36 +17,42 @@ export default function Timeline(){
             <div className="max-w-6xl ">
                 <div className="px-20">
                 <div className=" w-full flex flex-col space-y-4">
-                    <div className="relative flex py-5 items-center">
-                        <h1 className="flex-shrink font-bold text-6xl pr-10">Timeline<span className="text-orange-500">.</span></h1>
-                        <div className="flex-grow border-t border-gray-400"></div>
-                    </div>
-                    <div className="space-y-6">
-                        <div className="space-y-4">
-                            <div className="flex justify-between"><p>Andie</p><p>2022 - 2023</p></div>
-                            <div className="flex justify-between"><p>Front-End Developer</p><p>Toronto</p></div>
-                            <p className="text-xl ">Right now, I'm learning all the things I wanted to learn before, like  Python, Unity, Java (I'm gonna be posting all my silly lil' projects :D) and even things other things like tying fishing lines, making D&D characters and Indonesian.</p>
-                            <div className="flex items-start flex-wrap gap-2 w-full">
-                                {funTag.map((item, index) => (
-                                    <div className="bg-neutral-800 rounded-2xl px-2 py-0.5" key={index}>
-                                        {item.value}
-                                    </div>
-                                ))}
-                            </div>
+                    <DownReveal>
+                        <div className="relative flex py-5 items-center">
+                            <h1 className="flex-shrink font-bold text-6xl pr-10">Timeline<span className="text-orange-500">.</span></h1>
+                            <div className="flex-grow border-t border-gray-400"></div>
                         </div>
+                    </DownReveal>
+                    <div className="space-y-10">
+                        <Reveal>
+                            <div className="space-y-3">
+                                <div className="flex justify-between"><p className="font-bold text-2xl">Andie</p><p className="text-lg">2022 - 2023</p></div>
+                                <div className="flex justify-between"><p className="text-orange-500 font-bold text-xl">Front-End Developer</p><p className="text-lg">Toronto</p></div>
+                                <p className="text-xl ">From Intern to the main Front-End Developer in a year. I was in charge of producing and implementing most of the designs on Andie applications. Other jobs I did include mentoring interns, refactoring code for efficiency and readability, and getting Cheetos for the team.</p>
+                                <div className="flex items-start flex-wrap gap-2 w-full">
+                                    {funTag.map((item, index) => (
+                                        <div className="bg-neutral-800 rounded-2xl px-2 py-0.5" key={index}>
+                                            {item.value}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </Reveal>
 
-                        <div className="space-y-4">
-                            <div className="flex justify-between"><p>Seneca Polytechnic</p><p>2020 - 2023</p></div>
-                            <div className="flex justify-between"><p>lmao</p><p>North </p></div>
-                            <p className="text-xl ">Right now, I'm learning all the things I wanted to learn before, like  Python, Unity, Java (I'm gonna be posting all my silly lil' projects :D) and even things other things like tying fishing lines, making D&D characters and Indonesian.</p>
-                            <div className="flex items-start flex-wrap gap-2 w-full">
-                                {funTag.map((item, index) => (
-                                    <div className="bg-neutral-800 rounded-2xl px-2 py-0.5" key={index}>
-                                        {item.value}
-                                    </div>
-                                ))}
+                        <Reveal>
+                            <div className="space-y-3">
+                                <div className="flex justify-between"><p className="font-bold text-2xl">Seneca Polytechnic</p><p className="text-lg">2021 - 2023</p></div>
+                                <div className="flex justify-between"><p className="text-orange-500 font-bold text-xl">Student</p><p className="text-lg">North York</p></div>
+                                <p className="text-xl ">This is where my journey started. I learned the fundamentals of programming, algorithms, database structures, web development, and a whole lot of Object-Oriented Programming. This includes Python, C/C++ and currently Java. </p>
+                                <div className="flex items-start flex-wrap gap-2 w-full">
+                                    {funTag.map((item, index) => (
+                                        <div className="bg-neutral-800 rounded-2xl px-2 py-0.5" key={index}>
+                                            {item.value}
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
+                        </Reveal>
                     </div>
                 </div>
                 </div>

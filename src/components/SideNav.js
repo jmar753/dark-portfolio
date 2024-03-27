@@ -1,7 +1,7 @@
 import SideReveal from "../animation/SideReveal"
 
 export default function SideNav(){
-    const navArray = [{name:"About"},{name:"Projects"},{name:"Timeline"},{name:"Contact"},]
+    const navArray = [{name:"About" , delay:0.35},{name:"Projects" , delay:0.45},{name:"Timeline" , delay:0.55},{name:"Contact" , delay:0.65},]
 
 
     return(
@@ -14,7 +14,9 @@ export default function SideNav(){
             </div>
             {navArray.map((item, index)=>(
                 <div className="w-14 h-32 flex justify-center items-center hover:cursor-pointer hover:bg-neutral-800 hover:border-orange-500 hover:border-r" key={index}>
-                    <h1 className="rotate-90 text-xl">{item.name}</h1>
+                    <SideReveal propDelay={item.delay}>
+                        <h1 className="rotate-90 text-xl">{item.name}</h1>
+                    </SideReveal>
                 </div>
             ))}
         </div>
