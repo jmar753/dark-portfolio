@@ -6,7 +6,7 @@ export default function Contact(){
     return(
         <div className="min-h-[calc(100vh-64px)] w-full flex items-center justify-center text-white">
             <Reveal>
-                <div className="max-w-6xl text-center">
+                <div className="max-w-6xl text-center pb-[64px]">
                     <div className="p-20 flex flex-col space-y-8">
                         <h1 className="font-bold text-8xl">Contact <span className="text-orange-500">Me</span></h1>
                         <h1 className="text-xl">I'd love to hear back from you. You can find me on <a className="text-orange-500 hover:text-orange-700 hover:cursor-pointer">LinkedIn</a>, or you can send me an email</h1>
