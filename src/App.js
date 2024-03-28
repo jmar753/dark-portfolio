@@ -21,8 +21,9 @@ function App() {
     <div className="flex flex-col h-screen bg-neutral-900">
       <Header/>
       <div className="flex flex-row h-screen">
+        {}
         <SideNav handleClick={handleClick} ref1={ref1} ref2={ref2} ref3={ref3} ref4={ref4} ref5={ref5}/>
-        <main className="bg-neutral-900 w-[calc(100vw-3.5rem)] overflow-y-auto">
+        <main className="bg-neutral-900 w-full sm:w-[calc(100vw-3.5rem)] overflow-y-auto">
           <Introduction id="Introduction" ref={ref1}/>
           <About id="About" ref={ref2}/>
           <Projects id="Projects" ref={ref3}/>
