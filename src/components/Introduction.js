@@ -1,7 +1,7 @@
 import Reveal from "../animation/Reveal";
 import { forwardRef } from "react";
 
-function Introduction({},ref){
+function Introduction({refContact},ref){
     return(
         <div className="min-h-screen w-full flex items-center justify-center text-white"ref={ref}>
             <div className="max-w-6xl">
@@ -16,7 +16,9 @@ function Introduction({},ref){
                         <h1 className="font-thin sm:font-normal text-lg sm:text-xl">I'm a new grad who spent the last year building applications for a pretty cool startup, and making websites for some great people. I'm also a powerlifter (incase you've got some paperweights you need to move around🏋️). Let's connect!</h1>
                     </Reveal>
                     <Reveal propDelay={0.55}>
-                        <button className="w-36 h-12 text-xl rounded-md bg-orange-500 text-neutral-900 hover:bg-orange-600 transition duration-100">Contact Me</button>
+                        <button 
+                            onClick={()=>{refContact.current?.scrollIntoView({behavior: 'smooth'})}} 
+                            className="w-36 h-12 text-xl rounded-md bg-orange-500 text-neutral-900 hover:bg-orange-600 transition duration-100">Contact Me</button>
                     </Reveal>
                 </div>
             </div>
