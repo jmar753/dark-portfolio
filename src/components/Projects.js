@@ -14,15 +14,15 @@ function Projects({},ref){
     return(
         <div className="min-h-[calc(100vh-64px)] w-full flex items-center justify-center text-white"ref={ref}>
             <div className="max-w-6xl">
-                <div className="px-20">
+                <div className="px-4 sm:px-20">
                     <div className="flex flex-col space-y-4">
                         <DownReveal>
                             <div className="relative flex py-5 items-center">
-                                <h1 className="flex-shrink font-bold text-6xl pr-10">Projects<span className="text-orange-500">.</span></h1>
+                                <h1 className="flex-shrink font-bold text-5xl md:text-6xl pr-10">Projects<span className="text-orange-500">.</span></h1>
                                 <div className="flex-grow border-t border-gray-400"></div>
                             </div>
                         </DownReveal>
-                        <div className="mt-12 grid grid-cols-2 gap-4">
+                        <div className="mt-12 grid lg:grid-cols-2 gap-4">
                         {websiteArray.map((item, index) => (
                             <a href={item.link}  key={index}>
                                 <Reveal propDelay={item.delay}>
@@ -47,7 +47,7 @@ function Projects({},ref){
                                                     </div>
                                                 ))}
                                             </div>
-                                            <p className="py-3">{item.description}</p>
+                                            <p className="font-thin sm:font-normal py-3">{item.description}</p>
                                         </div>
                                     </div>
                                 </Reveal>
