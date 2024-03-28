@@ -1,8 +1,7 @@
 import SideReveal from "../animation/SideReveal"
 
-export default function SideNav({handleClick}){
-    const navArray = [{name:"About" , delay:0.35},{name:"Projects" , delay:0.45},{name:"Timeline" , delay:0.55},{name:"Contact" , delay:0.65},]
-
+export default function SideNav({handleClick, ref1, ref2, ref3, ref4, ref5}){
+    const navArray = [{name:"About" , delay:0.35, reference: ref1},{name:"Projects" , delay:0.45, reference: ref2},{name:"Timeline" , delay:0.55, reference: ref3},{name:"Contact" , delay:0.65, reference: ref4},]
 
     return(
     <SideReveal>
@@ -13,10 +12,13 @@ export default function SideNav({handleClick}){
                 </button>
             </div>
             {navArray.map((item, index)=>(
-                <button onClick={handleClick} className="w-14 h-32 flex justify-center items-center hover:bg-neutral-800 hover:border-orange-500 hover:border-r" key={index}>
-                    <SideReveal propDelay={item.delay}>
-                        <h1 className="rotate-90 text-xl">{item.name}</h1>
-                    </SideReveal>
+                <button onClick={handleClick}
+                    className="w-14 h-32 flex justify-center items-center hover:bg-neutral-800 hover:border-orange-500 hover:border-r" 
+                    key={index}
+                    >
+                        <SideReveal propDelay={item.delay}>
+                            <h1 className="rotate-90 text-xl">{item.name}</h1>
+                        </SideReveal>
                 </button>
             ))}
         </div>

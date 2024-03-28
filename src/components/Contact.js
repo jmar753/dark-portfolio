@@ -5,7 +5,7 @@ import { forwardRef } from "react";
 
 function Contact({},ref){
     return(
-        <div className="min-h-[calc(100vh-64px)] w-full flex items-center justify-center text-white">
+        <div className="min-h-[calc(100vh-64px)] w-full flex items-center justify-center text-white"ref={ref}>
             <Reveal>
                 <div className="max-w-6xl text-center pb-[64px]">
                     <div className="p-20 flex flex-col space-y-8">
