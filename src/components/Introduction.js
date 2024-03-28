@@ -1,8 +1,9 @@
 import Reveal from "../animation/Reveal";
+import { forwardRef } from "react";
 
-export default function Introduction(){
+function Introduction({},ref){
     return(
-        <div className="min-h-screen w-full flex items-center justify-center text-white">
+        <div className="min-h-screen w-full flex items-center justify-center text-white"ref={ref}>
             <div className="max-w-6xl">
                 <div className="p-20 flex flex-col space-y-4">
                     <Reveal>
@@ -22,3 +23,5 @@ export default function Introduction(){
         </div>
     )
 }
+
+export default forwardRef(Introduction)

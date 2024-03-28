@@ -4,14 +4,15 @@ import { FaGithub } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import DownReveal from "../animation/DownReveal";
 import Reveal from "../animation/Reveal";
+import { forwardRef } from "react";
 
-export default function Projects(){
+function Projects({},ref){
     const websiteArray = [
         {name:"Museum Search", link:"https://jr-mohan-museum-basic.vercel.app/", imageLoc:museum, tags:["React", "BootStrap", "PostgreSQL", "MongoDB"], description:"A full-stack project that uses the native MongoDB for the collection, PostgreSQL for storing account information, API keys for privacy, and Bootstrap for API calls.", project:"https://github.com/jmar753/Jr-Mohan-Museum-Basic", delay: 0.25},
         {name:"Portfolio Page", link:"https://jr-mohan-portfolio.vercel.app/", imageLoc:portfolio, tags:["NextJS", "Tailwind"], description:"A template I’ve been using often to create projects for friends, and helping with their job search! It’s dynamic and built specifically for mobile.", project:"https://github.com/jmar753/ProfessionalWebsite", delay: 0.35},
     ]
     return(
-        <div className="min-h-[calc(100vh-64px)] w-full flex items-center justify-center text-white">
+        <div className="min-h-[calc(100vh-64px)] w-full flex items-center justify-center text-white"ref={ref}>
             <div className="max-w-6xl">
                 <div className="px-20">
                     <div className="flex flex-col space-y-4">
@@ -59,3 +60,5 @@ export default function Projects(){
         </div>
     )
 }
+
+export default forwardRef(Projects)

@@ -8,17 +8,13 @@ import SideNav from './components/SideNav';
 import Timeline from './components/Timeline';
 
 function App() {
-  const [section, setSection] = useState("Contact")
-
   const ref1 = useRef(null)
   const ref2 = useRef(null)
   const ref3 = useRef(null)
   const ref4 = useRef(null)
   const ref5 = useRef(null)
   const handleClick = () => {
-    const element = document.querySelector('Contact')
-    console.log(section)
-    ref5.current?.scrollIntoView({behavior: 'smooth'})
+    ref4.current?.scrollIntoView({behavior: 'smooth'})
   };
 
   return (

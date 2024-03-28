@@ -2,11 +2,11 @@ import { FaLaptopCode } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { BiSolidInvader } from "react-icons/bi";
 import Reveal from "../animation/Reveal";
-import SideReveal from "../animation/SideReveal";
 import HeadingsReveal from "../animation/HeadingsReveal";
 import DownReveal from "../animation/DownReveal";
+import { forwardRef } from "react";
 
-export default function About(){
+function About({},ref){
     const workTag = [
         {value:"JavaScript"},
         {value:"Python"},
@@ -37,7 +37,7 @@ export default function About(){
     ]
     
     return(
-        <div className="min-h-[calc(100vh-64px)] w-full flex items-center justify-center text-white">
+        <div className="min-h-[calc(100vh-64px)] w-full flex items-center justify-center text-white"ref={ref}>
             <div className="max-w-6xl">
                 <div className="px-20">
                 <div className="w-full flex flex-col space-y-4">
@@ -101,3 +101,5 @@ export default function About(){
         </div>
     )
 }
+
+export default forwardRef(About)

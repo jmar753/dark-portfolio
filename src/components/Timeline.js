@@ -1,7 +1,8 @@
 import DownReveal from "../animation/DownReveal"
 import Reveal from "../animation/Reveal"
+import { forwardRef } from "react";
 
-export default function Timeline(){
+function Timeline({},ref){
     const funTag = [
         {value:"Java"},
         {value:"Spring"},
@@ -13,7 +14,7 @@ export default function Timeline(){
         {value:"PostgreSQL"},
     ]
     return(
-        <div className="min-h-[calc(100vh-64px)] w-full flex items-center justify-center text-white">
+        <div className="min-h-[calc(100vh-64px)] w-full flex items-center justify-center text-white"ref={ref}>
             <div className="max-w-6xl ">
                 <div className="px-20">
                 <div className=" w-full flex flex-col space-y-4">
@@ -60,3 +61,5 @@ export default function Timeline(){
         </div>
     )
 }
+
+export default forwardRef(Timeline)
