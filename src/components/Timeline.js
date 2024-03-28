@@ -1,7 +1,7 @@
 import DownReveal from "../animation/DownReveal"
 import Reveal from "../animation/Reveal"
 
-function Timeline({},ref){
+export default function Timeline(){
     const funTag = [
         {value:"Java"},
         {value:"Spring"},
@@ -60,5 +60,3 @@ function Timeline({},ref){
         </div>
     )
 }
-
-export default Timeline(Contact)
