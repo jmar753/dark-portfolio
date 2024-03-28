@@ -8,7 +8,7 @@ import { forwardRef } from "react";
 
 function Projects({},ref){
     const websiteArray = [
-        {name:"Museum Search", link:"https://jr-mohan-museum-basic.vercel.app/", imageLoc:museum, tags:["React", "BootStrap", "PostgreSQL", "MongoDB"], description:"A full-stack project that uses the native MongoDB for the collection, PostgreSQL for storing account information, API keys for privacy, and Bootstrap for API calls.", project:"https://github.com/jmar753/Jr-Mohan-Museum-Basic", delay: 0.25},
+        {name:"Museum Search", link:"https://jr-mohan-museum-basic.vercel.app/", imageLoc:museum, tags:["React", "BootStrap", "PostgreSQL", "MongoDB"], description:"A back-end project that uses the native MongoDB library for the museum collection, PostgreSQL for storing account information, API keys for privacy, and Node.js for API calls.", project:"https://github.com/jmar753/Jr-Mohan-Museum-Basic", delay: 0.25},
         {name:"Portfolio Page", link:"https://jr-mohan-portfolio.vercel.app/", imageLoc:portfolio, tags:["NextJS", "Tailwind"], description:"A template I’ve been using often to create projects for friends, and helping with their job search! It’s dynamic and built specifically for mobile.", project:"https://github.com/jmar753/ProfessionalWebsite", delay: 0.35},
     ]
     return(
@@ -47,7 +47,7 @@ function Projects({},ref){
                                                     </div>
                                                 ))}
                                             </div>
-                                            <p className="font-thin sm:font-normal py-3">{item.description}</p>
+                                            <p className="font-thin sm:font-normal md:text-lg py-3">{item.description}</p>
                                         </div>
                                     </div>
                                 </Reveal>
