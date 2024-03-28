@@ -6,17 +6,17 @@ import { HiMenu } from "react-icons/hi";
 
 export default function Header(){
     return(
-        <div className="bg-neutral-900 backdrop-blur bg-opacity-50 text-white w-full sm:w-[calc(100vw-3.5rem)] flex flex-row-reverse sm:flex-row justify-between items-center font-semibold h-16 fixed top-0 sm:left-14 z-40 text-xl px-4 sm:px-10">
+        <div className="bg-neutral-900 backdrop-blur bg-opacity-50 text-white w-full md:w-[calc(100vw-3.5rem)] flex flex-row-reverse md:flex-row justify-between items-center font-semibold h-16 fixed top-0 md:left-14 z-40 text-xl px-4 md:px-10">
             <DownReveal>
                 <IconContext.Provider value={{ className: 'text-zinc-500 text-xl size-6 opacity-100  hover:text-slate-200 hover:cursor-pointer transition duration-100' }}>
-                    <div className="hidden sm:flex gap-x-4">
+                    <div className="hidden md:flex gap-x-4">
                         <FaGithub/>
                         <FaLinkedin/>
                         <IoMdMail/>
                     </div>
                 </IconContext.Provider>
                 <IconContext.Provider value={{ className: 'text-zinc-500 text-xl size-10 opacity-100  hover:text-slate-200 hover:cursor-pointer transition duration-100' }}>
-                    <div>
+                    <div className="md:hidden flex ">
                         <HiMenu/>
                     </div>
                 </IconContext.Provider>

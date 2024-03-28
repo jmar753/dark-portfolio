@@ -5,7 +5,7 @@ export default function SideNav({handleclick, ref1, ref2, ref3, ref4, ref5}){
 
     return(
     <SideReveal>
-        <div className="h-screen bg-zinc-950 text-white hidden sm:sticky top-0 w-14 z-50 flex-col">
+        <div className="h-screen bg-zinc-950 text-white hidden md:block top-0 w-14 z-50 flex-col">
             <div className="h-16 w-14 flex justify-center items-center text-2xl font-bold">
                 <button onClick={()=>{
                     ref1.current?.scrollIntoView({behavior: 'smooth'})}} className="w-12 h-12 rounded-md flex justify-center items-center bg-neutral-900 hover:cursor-pointer hover:bg-neutral-800">
