@@ -9,7 +9,7 @@ import { forwardRef } from "react";
 function Projects({},ref){
     const websiteArray = [
         {name:"Museum Search", link:"https://jr-mohan-museum-basic.vercel.app/", imageLoc:museum, tags:["React", "BootStrap", "PostgreSQL", "MongoDB"], description:"A back-end project that uses the native MongoDB library for the museum collection, PostgreSQL for storing account information, API keys for privacy, and Node.js for API calls.", project:"https://github.com/jmar753/Jr-Mohan-Museum-Basic", delay: 0.25},
-        {name:"Portfolio Page", link:"https://jr-mohan-portfolio.vercel.app/", imageLoc:portfolio, tags:["NextJS", "Tailwind"], description:"A template I’ve been using often to create projects for friends, and helping with their job search! It’s dynamic and built specifically for mobile.", project:"https://github.com/jmar753/ProfessionalWebsite", delay: 0.35},
+        {name:"Portfolio Page", link:"https://jr-mohan-light-portfolio.vercel.app/", imageLoc:portfolio, tags:["NextJS", "Tailwind"], description:"A template I’ve been using often to create projects for friends, and helping with their job search! It’s dynamic and built specifically for mobile.", project:"https://github.com/jmar753/ProfessionalWebsite", delay: 0.35},
     ]
     return(
         <div className="min-h-[calc(100vh-64px)] w-full flex items-center justify-center text-white"ref={ref}>
