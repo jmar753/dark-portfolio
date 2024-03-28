@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import About from './components/About';
 import Contact from './components/Contact';
 import Header from './components/Header';
@@ -6,32 +7,24 @@ import Projects from './components/Projects';
 import SideNav from './components/SideNav';
 import Timeline from './components/Timeline';
 
-import { useRef, useEffect } from 'react';
-import { useInView } from "framer-motion";
-
-
 function App() {
 
-  const ref = useRef(null);
-  const isInView = useInView(ref)
-
-  useEffect(() => {
-    if(isInView){
-        console.log("lmao")
-    }
-}, [isInView])
+  const ref = useRef(null)
+  const handleClick = () => {
+    ref.current?.scrollIntoView({behavior: 'smooth'})
+  };
 
   return (
     <div className="flex flex-col h-screen bg-neutral-900">
       <Header/>
       <div className="flex flex-row h-screen">
-        <SideNav/>
+        <SideNav handleClick={handleClick}/>
         <main className="bg-neutral-900 w-[calc(100vw-3.5rem)] overflow-y-auto">
-          <Introduction id="Introduction"/>
-          <About id="About"/>
-          <Projects id="Projects"/>
-          <Timeline id="Timeline"/>
-          <Contact id="Contact"/>
+          <Introduction ref={ref}/>
+          <About ref={ref}/>
+          <Projects ref={ref}/>
+          <Timeline ref={ref}/>
+          <Contact ref={ref}/>
         </main>
       </div>
     </div>

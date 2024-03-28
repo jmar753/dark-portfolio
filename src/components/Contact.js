@@ -1,8 +1,9 @@
 import { IoMdMail } from "react-icons/io";
 import { IconContext } from "react-icons";
 import Reveal from "../animation/Reveal";
+import { forwardRef } from "react";
 
-export default function Contact(){
+function Contact({},ref){
     return(
         <div className="min-h-[calc(100vh-64px)] w-full flex items-center justify-center text-white">
             <Reveal>
@@ -24,3 +25,5 @@ export default function Contact(){
         </div>
     )
 }
+
+export default forwardRef(Contact)
