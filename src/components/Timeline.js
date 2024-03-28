@@ -27,9 +27,9 @@ function Timeline({},ref){
                         <div className="space-y-10">
                             <Reveal>
                                 <div className="space-y-3">
-                                    <div className="flex justify-between"><p className="font-bold text-2xl">Andie</p><p className="text-lg">2022 - 2023</p></div>
-                                    <div className="flex justify-between"><p className="text-orange-500 font-bold text-xl">Front-End Developer</p><p className="text-lg">Toronto</p></div>
-                                    <p className="text-xl ">From Intern to the main Front-End Developer in a year. I was in charge of producing and implementing most of the designs on Andie applications. Other jobs I did include mentoring interns, refactoring code for efficiency and readability, and getting Cheetos for the team.</p>
+                                    <div className="flex justify-between items-center"><p className="font-bold text-2xl">Andie</p><p className="font-thin sm:font-normal md:text-lg">2022 - 2023</p></div>
+                                    <div className="flex justify-between items-center"><p className="text-orange-500 font-bold text-xl">Front-End Developer</p><p className="font-thin sm:font-normal md:text-lg">Toronto</p></div>
+                                    <p className="font-thin sm:font-normal md:text-xl">From Intern to the main Front-End Developer in a year. I was in charge of producing and implementing most of the designs on Andie applications. Other jobs I did include mentoring interns, refactoring code for efficiency and readability, and getting Cheetos for the team.</p>
                                     <div className="flex items-start flex-wrap gap-2 w-full">
                                         {funTag.map((item, index) => (
                                             <div className="bg-neutral-800 rounded-2xl px-2 py-0.5" key={index}>
@@ -42,9 +42,9 @@ function Timeline({},ref){
 
                             <Reveal>
                                 <div className="space-y-3">
-                                    <div className="flex justify-between"><p className="font-bold text-2xl">Seneca Polytechnic</p><p className="text-lg">2021 - 2023</p></div>
-                                    <div className="flex justify-between"><p className="text-orange-500 font-bold text-xl">Student</p><p className="text-lg">North York</p></div>
-                                    <p className="text-xl ">This is where my journey started. I learned the fundamentals of programming, algorithms, database structures, web development, and a whole lot of Object-Oriented Programming. This includes Python, C/C++ and currently Java. </p>
+                                    <div className="flex justify-between items-center"><p className="font-bold text-2xl">Seneca Polytechnic</p><p className="font-thin sm:font-normal md:text-lg">2021 - 2023</p></div>
+                                    <div className="flex justify-between items-center"><p className="text-orange-500 font-bold text-xl">Student</p><p className="font-thin sm:font-normal md:text-lg">North York</p></div>
+                                    <p className="font-thin sm:font-normal md:text-xl">This is where my journey started. I learned the fundamentals of programming, algorithms, database structures, web development, and a whole lot of Object-Oriented Programming. This includes Python, C/C++ and currently Java. </p>
                                     <div className="flex items-start flex-wrap gap-2 w-full">
                                         {funTag.map((item, index) => (
                                             <div className="bg-neutral-800 rounded-2xl px-2 py-0.5" key={index}>
