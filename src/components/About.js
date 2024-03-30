@@ -37,7 +37,7 @@ function About({},ref){
     ]
     
     return(
-        <div className="min-h-[calc(100vh-64px)] w-full flex items-center justify-center text-white"ref={ref}>
+        <div className="min-h-[calc(100vh-64px)] w-full flex items-center justify-center text-white overscroll-x-none"ref={ref}>
             <div className="max-w-6xl pt-20 sm:pt-0">
                 <div className="px-4 sm:px-20">
                     <div className="w-full flex flex-col space-y-4">
