@@ -12,7 +12,7 @@ function Projects({},ref){
         {name:"Portfolio Page", link:"https://jr-mohan-light-portfolio.vercel.app/", imageLoc:portfolio, tags:["NextJS", "Tailwind"], description:"A template I’ve been using often to create projects for friends, and helping with their job search! It’s dynamic and built specifically for mobile.", project:"https://github.com/jmar753/ProfessionalWebsite", delay: 0.35},
     ]
     return(
-        <div className="min-h-[calc(100vh-64px)] w-full flex items-center justify-center text-white"ref={ref}>
+        <div className="min-h-screen w-full flex items-center justify-center md:pt-0 pt-10 text-white"ref={ref}>
             <div className="max-w-6xl pt-20 sm:pt-0">
                 <div className="px-4 sm:px-20">
                     <div className="flex flex-col space-y-4">
