@@ -12,13 +12,13 @@ function Projects({},ref){
         {name:"Portfolio Page", link:"https://jr-mohan-light-portfolio.vercel.app/", imageLoc:portfolio, tags:["NextJS", "Tailwind"], description:"A template I’ve been using often to create projects for friends, and helping with their job search! It’s dynamic and built specifically for mobile.", project:"https://github.com/jmar753/ProfessionalWebsite", delay: 0.35},
     ]
     return(
-        <div className="min-h-screen w-full flex items-center justify-center md:pt-10 pt-0 text-white"ref={ref}>
+        <div className="min-h-screen pt-0 w-full flex items-center justify-center sm:pt-20 text-tuscany-950 bg-tuscany-200 pb-20"ref={ref}>
             <div className="max-w-6xl pt-20 sm:pt-0">
                 <div className="px-4 sm:px-20">
                     <div className="flex flex-col space-y-4">
                         <DownReveal>
                             <div className="relative flex py-5 items-center">
-                                <h1 className="flex-shrink font-bold text-5xl md:text-6xl pr-10">Projects<span className="text-orange-500">.</span></h1>
+                                <h1 className="flex-shrink font-bold text-5xl md:text-6xl pr-10">Projects<span className="text-tuscany-600">.</span></h1>
                                 <div className="flex-grow border-t border-gray-400"></div>
                             </div>
                         </DownReveal>
@@ -26,7 +26,7 @@ function Projects({},ref){
                         {websiteArray.map((item, index) => (
                             <a href={item.link}  key={index}>
                                 <Reveal propDelay={item.delay}>
-                                    <div className="relative group overflow-hidden p-4 rounded-xl hover:bg-zinc-950 hover:cursor-pointer">
+                                    <div className="relative group overflow-hidden p-4 rounded-xl bg-tuscany-100 hover:bg-tuscany-300 hover:cursor-pointer transition duration-600 lg:h-[560px]">
                                         <div className="relative gap-y-2">
                                             <img className="object-cover col-span-2 rounded-lg" src={item.imageLoc} alt=""/>
                                             <div className="relative flex py-3 items-center">
@@ -42,7 +42,7 @@ function Projects({},ref){
                                             </div>
                                             <div className="flex items-start flex-wrap gap-2 w-full">
                                                 {item.tags.map((name, index) => (
-                                                    <div className="bg-orange-500 rounded-2xl px-2 py-0.5" key={index}>
+                                                    <div className="bg-tuscany-600 rounded-2xl text-white px-2 py-0.5" key={index}>
                                                         {name}
                                                     </div>
                                                 ))}
