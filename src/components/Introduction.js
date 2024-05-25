@@ -18,7 +18,7 @@ function Introduction({refContact},ref){
                     <Reveal propDelay={0.55}>
                         <button 
                             onClick={()=>{refContact.current?.scrollIntoView({behavior: 'smooth'})}} 
-                            className="w-36 h-12 text-xl rounded-md bg-orange-500 text-white hover:bg-orange-700 hover:shadow-inner transition duration-200">Contact Me</button>
+                            className="w-36 h-12 text-xl rounded-md bg-orange-500 text-neutral-900 hover:bg-orange-700 hover:shadow-inner transition duration-200">Contact Me</button>
                     </Reveal>
                 </div>
             </div>
