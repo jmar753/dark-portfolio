@@ -37,13 +37,13 @@ function About({},ref){
     ]
     
     return(
-        <div className="pt-20 min-h-[calc(100vh)] w-full flex items-center justify-center text-cream-950 bg-cream-200 overflow-x-hidden pb-20"ref={ref}>
-            <div className="max-w-6xl">
+        <div className="min-h-[calc(100vh-64px)] w-full flex items-center justify-center text-white overflow-x-hidden"ref={ref}>
+            <div className="max-w-6xl pt-20 sm:pt-0">
                 <div className="px-4 sm:px-20">
                     <div className="w-full flex flex-col space-y-4">
                         <DownReveal>
                             <div className="relative flex py-5 items-center">
-                                <h1 className="flex-shrink font-bold text-5xl md:text-6xl pr-10">About<span className="text-cream-600">.</span></h1>
+                                <h1 className="flex-shrink font-bold text-5xl md:text-6xl pr-10">About<span className="text-orange-500">.</span></h1>
                                 <div className="flex-grow border-t border-gray-400"></div>
                             </div>
                         </DownReveal>
@@ -60,7 +60,7 @@ function About({},ref){
                                     <p className="">Outside of work, I love powerlifting because it’s funny to lift heavy at a whopping 5 foot 4. Other than that, you can find me in rivers untangling lines and boardgame cafes playing some Catan and YuGiOh.</p>
                                 </Reveal>
                                 <Reveal>
-                                    <p className="">I'm actively looking for new positions where I can learn as much as I can, especially Back-End since my goal is to a well rounded Full-Stack developer. If you think you've got an opening for an developer like me, let's connect!</p>
+                                    <p className="">I'm actively looking for new positions where I can learn as much as I can, especially Back-End since my goal is to a well rounded Full-Stack developer. If you think you've got an opening for an intern like me, let's connect!</p>
                                 </Reveal>
                             </div>
 
@@ -68,14 +68,14 @@ function About({},ref){
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1  space-y-4 md:space-y-0 pt-10 lg:pt-0">
                                 <HeadingsReveal className="">
                                     <div className="flex items-center gap-x-2 pb-4">
-                                        <IconContext.Provider value={{ className: 'text-cream-600 size-7 opacity-100' }}>
+                                        <IconContext.Provider value={{ className: 'text-orange-500 size-7 opacity-100' }}>
                                             <FaLaptopCode />
                                         </IconContext.Provider>
                                         <h1 className="font-bold text-3xl">Use at work</h1>
                                     </div>
                                     <div className="flex items-start flex-wrap gap-2 w-full">
                                         {workTag.map((item, index) => (
-                                            <div className="bg-cream-600 text-white  rounded-2xl px-2 py-0.5" key={index}>
+                                            <div className="bg-neutral-800 rounded-2xl px-2 py-0.5" key={index}>
                                                 {item.value}
                                             </div>
                                         ))}
@@ -83,14 +83,14 @@ function About({},ref){
                                 </HeadingsReveal>
                                 <HeadingsReveal className="">
                                     <div className="flex items-center gap-x-2 pb-4">
-                                        <IconContext.Provider value={{ className: 'text-cream-600 size-7 opacity-100' }}>
+                                        <IconContext.Provider value={{ className: 'text-orange-500 size-7 opacity-100' }}>
                                             <BiSolidInvader />
                                         </IconContext.Provider>
                                         <h1 className="font-bold text-3xl">Use for fun</h1>
                                     </div>
                                     <div className="flex items-start flex-wrap gap-2 w-full">
                                         {funTag.map((item, index) => (
-                                            <div className="bg-cream-600 text-white  rounded-2xl px-2 py-0.5" key={index}>
+                                            <div className="bg-neutral-800 rounded-2xl px-2 py-0.5" key={index}>
                                                 {item.value}
                                             </div>
                                         ))}
