@@ -26,7 +26,7 @@ function Projects({},ref){
                         {websiteArray.map((item, index) => (
                             <a href={item.link}  key={index}>
                                 <Reveal propDelay={item.delay}>
-                                    <div className="relative group overflow-hidden p-4 rounded-xl hover:bg-zinc-950 hover:cursor-pointer">
+                                    <div className="relative group overflow-hidden p-4 sm:h-[560px] rounded-xl hover:bg-zinc-950 hover:cursor-pointer">
                                         <div className="relative gap-y-2">
                                             <img className="object-cover col-span-2 rounded-lg" src={item.imageLoc} alt=""/>
                                             <div className="relative flex py-3 items-center">
